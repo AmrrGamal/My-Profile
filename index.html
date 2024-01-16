@@ -6,7 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="myweb.css">
-    <title>Document</title>
+    <title>Amr Gamal</title>
+    <style>
+        /* Add this style to customize the appearance of the icons */
+        
+        .social-icons a {
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        .social-icons i {
+            font-size: 30px;
+            color: black;
+        }
+    </style>
+    <script>
+        function downloadCV() {
+            // You can replace 'path/to/my_cv.pdf' with the actual path to your PDF file.
+            var pdfPath = 'DBII_PROJECT.pdf';
+            var link = document.createElement('a');
+            link.href = pdfPath;
+            link.download = 'DBII_PROJECT.pdf';
+            link.click();
+        }
+    </script>
 </head>
 <body>
     
@@ -17,7 +39,7 @@
                 <h1>I am <span class="blue-color"   >Amr Gamal</span></h1>
                 <h3>A Short description about me</h3> 
              <p>A deadline oriented <b>developer</b> with a solid-track record of delivering solutions that exceed client expectation.</p>
-                 <a href="#" class="btn">
+                 <a href="https://www.linkedin.com/in/amr-gamal-038261292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn">
                      Hire Me
                  </a>
             </div>
@@ -33,7 +55,7 @@
                  <p class="dreamparagraph">I already learned the basic wedgits in flutter and i deal with APIs,firebase and local databases . <br />My goal is to become a Flutter developer.
                  <br />You can get a more detailed description from my CV.</p>
              <div class="CV button" style="margin-bottom: 30px;">
-                 <a href="#" class="btn">
+                <a href="#" class="btn" onclick="downloadCV()">
                  Download My CV
                  </a>
              </div>
@@ -55,10 +77,17 @@
          </section>
          <!--Footer-->
          <section>
-             <footer>
-                 & All Rights Reserved.
-             </footer>
-         </section>
+            <footer>
+                <div class="social-icons">
+                    <!-- LinkedIn icon -->
+                    <a href="https://www.linkedin.com/in/amr-gamal-038261292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="https://img.icons8.com/fluency/48/000000/linkedin.png"/></a>
+                    <!-- Facebook icon -->
+                    <a href="https://www.facebook.com/profile.php?id=100024925287147" target="_blank"><img src="https://img.icons8.com/fluency/48/000000/facebook.png"/></a>
+                    
+                </div>
+                To communication with Me 
+            </footer>
+        </section>
     
 </body>
 </html>
