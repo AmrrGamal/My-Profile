@@ -68,11 +68,11 @@ body{
 }
 footer{
     position: absolute;
-    background-color: blue;
+    background-color: BLUE;
     height: auto;
     width: 80vw;
-    padding: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
     color: white;
-    font-family: cursive;
-    border-radius: 30px;
+    border-radius: 20px;
 }
